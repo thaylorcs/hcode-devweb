@@ -144,13 +144,13 @@ header .header-black li a {
 }
 
 header #logotipo{
-	top: +35;
 	position: absolute;
+	top: +35;
 }
 
 
 #menu{
-	margin: 12px;
+	margin: 12px 0;
 }
 
 #menu li{
@@ -169,6 +169,7 @@ header #logotipo{
 	border: none;
 	height: 30px;
 	line-height: 30px;
+	padding-left: 8px;
 }
 
 #menu li.search input::-webkit-input-placeholder {
@@ -195,10 +196,10 @@ header #logotipo{
 	padding: 10px 25px;
 }
 
-/*#menu li.search .input-group{
-	top: 8px;
+#menu li.search .input-group{
+	/*top: 8px;*/
 
-}*/
+}
 
 
 #banner{
@@ -206,7 +207,8 @@ header #logotipo{
 	height: 728px;
 	position: relative;
 	background: url("../jpg/banner.jpg") no-repeat;
-	top: -231px;
+	background-position: 0px -100px;
+	top: -130px;
 
 }
 
@@ -229,4 +231,31 @@ header #logotipo{
 	font-family: "OpenSans";
 	font-weight: bold;
 
+}
+
+#news{
+
+	position: relative;
+	top: -110px
+
+}
+
+#news h2{
+	color: #5E2799;
+	font-family: 'OpenSans-Light';
+	font-size: 48px;
+	text-transform: uppercase;
+	text-align: center;
+
+
+}
+
+#news hr{
+	border: #FDE192 solid 2px;
+	width: 200px;
+	margin: 0 auto;
+}
+
+#news .thumbnails{
+	margin-top: 20px;
 }
