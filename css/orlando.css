@@ -1,0 +1,175 @@
+@font-face {
+	font-family: 'OpenSans';
+	src: url("../fonts/Open_Sans/OpenSans-Regular.ttf");
+	font-size: 1em;
+}
+
+
+
+header{
+	width: 100%;
+	height: 150px;
+	background-color: #5E299A;
+
+}
+
+header .container{
+	position: relative;
+}
+
+header .header-black{
+	background-color: #000;
+	height: 40px;
+
+}
+
+header .header-black li{
+	background-image: url("../png/clubs.png");
+	background-repeat: no-repeat;
+	display: inline-block;
+	margin: 4px 8px;
+}
+
+header .header-black li.club-01 {
+	background-position: 0px 0px;
+	
+}
+
+header .header-black li.club-02 {
+	background-position: -48px 0px;
+
+}
+
+header .header-black li.club-03 {
+	background-position: -96px 0px;
+
+}
+
+header .header-black li.club-04 {
+	background-position: -140px 0px;
+
+}
+
+header .header-black li.club-05 {
+	background-position: -192px 0px;
+
+}
+
+header .header-black li.club-06 {
+	background-position: -240px 0px;
+
+}
+
+header .header-black li.club-07 {
+	background-position: -288px 0px;
+
+}
+
+header .header-black li.club-08 {
+	background-position: -336px 0px;
+
+}
+
+header .header-black li.club-09 {
+	background-position: -384px 0px;
+
+}
+
+header .header-black li.club-10 {
+	background-position: -432px 0px;
+
+}
+
+header .header-black li.club-11 {
+	background-position: -480px 0px;
+
+}
+
+header .header-black li.club-12 {
+	background-position: -528px 0px;
+
+}
+
+header .header-black li.club-13 {
+	background-position: -576px 0px;
+
+}
+
+header .header-black li.club-14 {
+	background-position: -624px 0px;
+
+}
+
+header .header-black li.club-15 {
+	background-position: -672px 0px;
+
+}
+
+header .header-black li.club-16 {
+	background-position: -720px 0px;
+
+}
+
+header .header-black li.club-17 {
+	background-position: -768px 0px;
+
+}
+
+header .header-black li.club-18 {
+	background-position: -806px 0px;
+
+}
+
+header .header-black li.club-19 {
+	background-position: -852px 0px;
+
+}
+
+header .header-black li.club-20 {
+	background-position: -900px 0px;
+
+}
+
+header .header-black li a {
+	width: 32px;
+	height: 32px;
+	display: block;
+}
+
+header #logotipo{
+	top: +29;
+	position: absolute;
+}
+
+
+#menu{
+	margin: 26px;
+}
+
+#menu li{
+	display: inline-block;
+	font-family: "OpenSans";
+
+}
+
+#menu li.search{
+	width: 182px;
+}
+
+#menu li.search input{
+	background-color: #5c2d90;
+	color: #fff;
+	border: none;
+	height: 30px;
+	line-height: 30px;
+}
+
+#menu li.search input::-webkit-input-placeholder {
+	color: #fff
+}
+
+#menu li a {
+	color: #FFF;
+	font-size: 16px;
+	padding: 10px 25px;
+}
