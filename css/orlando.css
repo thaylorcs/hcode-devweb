@@ -146,8 +146,8 @@ header .header-black li a {
 header #logotipo{
 	position: absolute;
 	top: +35;
+	z-index: 3;
 }
-
 
 #menu{
 	margin: 12px 0;
@@ -161,6 +161,13 @@ header #logotipo{
 
 #menu li.search{
 	width: 182px;
+	transition-duration: 1s;
+	transition-timing-function: cubic-bezier(1, -91, 1.45, 1);
+}
+
+#menu li.search.ativo{
+	width: 300px;
+
 }
 
 #menu li.search input{
@@ -170,6 +177,10 @@ header #logotipo{
 	height: 30px;
 	line-height: 30px;
 	padding-left: 8px;
+}
+
+#menu li.search.ativo input{
+	width: 300px;
 }
 
 #menu li.search input::-webkit-input-placeholder {
@@ -201,7 +212,6 @@ header #logotipo{
 
 }
 
-
 #banner{
 	width: 100%;
 	height: 728px;
@@ -213,6 +223,7 @@ header #logotipo{
 }
 
 #banner h1{
+	transition: 1s;
 	color: #FFF;
 	top: 300px;
 	/*margin-top: 300px;*/
@@ -222,6 +233,11 @@ header #logotipo{
 	font-family: "OpenSans-Light";
 	margin-left: 50px;
 
+}
+
+#banner h1.efeito{
+	color: #5E2799;
+	font-size: 12em;
 }
 
 #banner h1 small{
@@ -274,6 +290,14 @@ header #logotipo{
 	font-size: 18px;
 	font-family: 'OpenSans';
 	font-weight: bold;
+}
+
+#news .thumbnails .item-inner{
+	padding: 10px;
+}
+
+#news .thumbnails .item-inner img{
+	width: 100%;
 }
 
 #estatisticas {
