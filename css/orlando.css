@@ -358,7 +358,7 @@ footer .row{
 }
 
 footer .row p{
-	line-height: 60px;
+	line-height: 50px;
 	margin-bottom: 0;
 }
 
@@ -416,6 +416,7 @@ footer .row-cols h4{
 	color: #fff;
 	padding-bottom: 17px;
 	border-bottom: #242D37 1px solid;
+	text-transform: uppercase;
 }
 
 footer .row-cols h5{
@@ -467,9 +468,32 @@ footer .col-get-in-touch i{
 	color: #9b9b9b;
 	font-size: 22px;
 	margin: 0 6px;
+	line-height: 28px;
 }
 
 footer .col-get-in-touch p{
 	line-height: 20px;
+}
+
+footer .list-socials{
+	margin-top: 4px;
+}
+
+footer .list-socials li{
+	display: inline-block;
+}
+
+footer .list-socials a{
+	display: block;
+	border: #9b9b9b 1px solid;
+	width: 28px;
+	height: 28px;
+	line-height: 28px;
+	border-radius: 14px;
+}
+
+footer .list-socials i{
+	font-size: 16px;
+	/*margin: 7px auto;*/
 }
 
