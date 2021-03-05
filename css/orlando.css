@@ -10,8 +10,6 @@
 	font-size: 1em;
 }
 
-
-
 header{
 	width: 100%;
 	height: 150px;
@@ -30,11 +28,16 @@ header .header-black{
 
 }
 
+header .header-black ul{
+	padding: 0;
+	float: right;
+}
+
 header .header-black li{
 	background-image: url("../png/clubs.png");
 	background-repeat: no-repeat;
 	display: inline-block;
-	margin: 4px 8px;
+	margin: 4px;
 }
 
 header .header-black li.club-01 {
@@ -137,6 +140,16 @@ header .header-black li.club-20 {
 
 }
 
+header .header-black li.club-21 {
+	background-position: -948px 0px;
+
+}
+
+header .header-black li.club-22 {
+	background-position: -996px 0px;
+
+}
+
 header .header-black li a {
 	width: 32px;
 	height: 32px;
@@ -145,12 +158,17 @@ header .header-black li a {
 
 header #logotipo{
 	position: absolute;
-	top: +35;
+	top: +20px;
 	z-index: 3;
+}
+
+#btn-bars, #btn-search, #btn-news-prev, #btn-news-next{
+	display: none;
 }
 
 #menu{
 	margin: 12px 0;
+	float: right;
 }
 
 #menu li{
@@ -183,7 +201,7 @@ header #logotipo{
 	width: 300px;
 }
 
-#menu li.search input::-webkit-input-placeholder {
+#menu li.search ::-webkit-input-placeholder {
 	color: #fff
 }
 
@@ -205,10 +223,11 @@ header #logotipo{
 	color: #FFF;
 	font-size: 16px;
 	padding: 10px 25px;
+	font-weight: bold;
 }
 
 #menu li.search .input-group{
-	/*top: 8px;*/
+	top: 8px;
 
 }
 
@@ -250,10 +269,8 @@ header #logotipo{
 }
 
 #news{
-
 	position: relative;
 	top: -110px
-
 }
 
 #news h2{
@@ -263,8 +280,6 @@ header #logotipo{
 	text-transform: uppercase;
 	text-align: center;
 	margin: 0 auto;
-
-
 }
 
 #news hr{
@@ -300,6 +315,22 @@ header #logotipo{
 	width: 100%;
 }
 
+.thumbnails h3{
+	color: #5e299a;
+	font-size: 18px;
+	font-family: 'OpenSans';
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+.thumbnails .item-inner{
+	padding: 10px;
+}
+
+.thumbnails .item-inner img{
+	width: 100%;
+}
+
 #estatisticas {
 	background-color: #5E299A;
 	width: 100%;
@@ -311,6 +342,7 @@ header #logotipo{
 	text-transform: uppercase;
 	font-family: 'OpenSans';
 	font-size: 64px;
+	margin-top: 36px;
 	text-align: center;
 }
 
@@ -382,8 +414,9 @@ footer .row{
 }
 
 footer .row p{
-	line-height: 50px;
 	margin-bottom: 0;
+	display: inline-block;
+	margin-top: 8px;
 }
 
 footer .row-cinza-claro{
@@ -401,8 +434,6 @@ footer .float-left{
 	font-family: 'OpenSans';
 	font-size: 16px;
 	color: #666;
-
-
 }
 
 footer .text-roxo{
@@ -410,6 +441,7 @@ footer .text-roxo{
 	font-family: 'OpenSans';
 	font-weight: bold;
 	font-size: 14px;
+	float: right;
 
 }
 
@@ -455,6 +487,11 @@ footer .row-cols time{
 	color: #FDE092;
 	font-family: Arial;
 	font-size: 14px;
+}
+
+footer .col-md-10{
+	position: relative;
+	top:-15px;
 }
 
 footer .col-links a,
@@ -521,3 +558,284 @@ footer .list-socials i{
 	/*margin: 7px auto;*/
 }
 
+footer .page-up{
+	display: inline-block!important;
+}
+
+/*Videos page*/
+
+video {
+	width: 1240px;
+	height: 400px;
+	margin: 0 auto;
+}
+
+.toggle-volume{
+
+	width: 100%;
+}
+
+/*Shop*/
+.text-arial-cinza{
+	font-family: arial;
+	font-size: 12px;
+	color: #666;
+}
+
+.shop-roxo{
+	color: #6e3ea4;
+}
+
+#destaque-produtos-container{
+	position: relative;
+}
+
+#destaque-produtos{
+	margin: 30px auto
+;}
+
+#destaque-produtos .col-imagem{
+	text-align: center;
+}
+
+#destaque-produtos .col-imagem img{
+	max-width: 100%;
+	max-height: 250px;
+}
+
+#destaque-produtos .col-descricao h2{
+	font-family: arial;
+	font-size: 20px;
+	color: #666;
+	margin-bottom: 10px;
+}
+
+#destaque-produtos .col-descricao .box-valor{
+	width: 100%;
+	position: relative;
+}
+
+#destaque-produtos .col-descricao .box-valor .text-reais{
+	font-size: 18px;
+	font-weight: bold;
+	position: absolute;
+	top: 13px;
+	left: 28px;
+}
+
+#destaque-produtos .col-descricao .box-valor .text-valor{
+	font-size: 50px;
+	font-weight: bold;
+	position: absolute;
+	top: -12px;
+	left: 54px;
+}
+
+#destaque-produtos .col-descricao .box-valor .text-valor-centavos{
+	font-size: 30px;
+	font-weight: bold;
+	position: absolute;
+	top: -10px;
+	left: 183px;
+}
+
+#destaque-produtos .col-descricao .btn-comprar{
+	font-size: 26px;
+	padding: 10px 0;
+}
+
+#destaque-produtos .col-descricao .btn-comprar .fa {
+	font-size: 34px;
+}
+
+#destaque-produtos .col-descricao .text-parcelas {
+	margin-top: 20px;
+}
+
+#btn-destaque-prev {
+	position: absolute;
+	top: 140px;
+	left: 0;
+	background: none;
+	border: none;
+	font-size: 64px;
+	outline: none;
+}
+
+#btn-destaque-next {
+	position: absolute;
+	top: 140px;
+	right: 0;
+	background: none;
+	border: none;
+	font-size: 64px;
+	outline: none;
+}
+
+#promocoes .box-promocao{
+	background-color: #633ea4;
+	width: 100%;
+	height: 150px;
+	position: relative;
+	color: white;
+	text-align: center;
+}
+
+#promocoes .box-promocao.box-1{
+	font-family: arial;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 7px;
+}
+
+#promocoes .box-promocao.box-1 p {
+	position: absolute;
+	top: 58px;
+}
+
+#promocoes .box-promocao .text-ate {
+	font-size: 20px;
+	font-weight: bold;
+	font-family: arial;
+	position: absolute;
+	left: 15px;
+	top: 5px;
+
+}
+
+#promocoes .box-promocao .text-numero{
+	font-size: 128px;
+	font-family: 'OpenSans-Light';
+	position: absolute;
+	top: -10px;
+	left: 15px;
+
+}
+
+#promocoes .box-promocao .text-porcento{
+	font-size: 64px;
+	font-family: 'OpenSans';
+	position: absolute;
+	right: 4px;
+	top: 14px;
+
+}
+
+#promocoes .box-promocao .text-off{
+	font-size: 36px;
+	font-family: 'OpenSans-Light';
+	position: absolute;
+	top: 78px;
+	right: 2px;
+}
+
+.box-produto-info a{
+	text-decoration: none;
+}
+
+.box-produto-info h3{
+	font-size: 12px;
+	font-family: arial;
+	color: #666;
+}
+
+.box-produto-info .produto-img{
+	width: 100%;
+}
+
+.box-produto-info .text-valor{
+	font-size: 26px;
+	font-weight: bold;
+}
+
+.title-default-roxo h2{
+	color: #5e2799;
+	font-family: 'OpenSans-Light';
+	font-size: 48px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.title-default-roxo hr{
+	border: #fde192 solid 8px;
+	widtH: 200px;
+	margin: 0 auto;
+}
+
+
+#cart-products {
+	margin-top: 20px;
+}
+#cart-products td {
+	vertical-align: middle;
+	color: #666;
+}
+#cart-products p {
+	margin: 0;
+	font-size: 12px;
+	color: #666;
+}
+#cart-products .btn {
+	border: none;
+	background: none;
+	outline: 0;
+}
+#cart-products .btn i {
+	font-size: 32px;
+}
+#cart-products .btn i.fa-close {
+	font-size: 14px;
+}
+#cart-products .form-control {
+	text-align: center;
+	border: none;
+	background: none;
+	box-shadow: none;
+	outline: 0;
+}
+#cart-products th {
+	font-weight: 100;
+}
+#cart-products img {
+	max-width: 80px;
+	max-height: 80px;
+}
+.box-outline-grey {
+	border: #CCC 1px solid;
+	height: 160px;
+	text-align: center;
+}
+#calculo-de-frete .btn {
+	background-color: #ccc;
+	height: 42px;
+	border-radius: 0;
+}
+#calculo-de-frete .form-control {
+	height: 42px;
+	border-radius: 0;
+}
+.box-cart-totais {
+	background-color: #eee;
+	height: 160px;
+	padding: 10px;
+}
+.box-cart-totais .table>tbody>tr>td, 
+.box-cart-totais .table>tbody>tr>th, 
+.box-cart-totais .table>tfoot>tr>td, 
+.box-cart-totais .table>tfoot>tr>th, 
+.box-cart-totais .table>thead>tr>td, 
+.box-cart-totais .table>thead>tr>th {
+	border: none;
+	padding: 14px;
+}
+.text-bold {
+	font-weight: bold;
+}
+.btn-roxo {
+	background-color: #5E299A;
+	height: 42px;
+	width: 164px;
+	font-weight: bold;
+	color: #fff!important;
+	border-radius: 0;
+}
