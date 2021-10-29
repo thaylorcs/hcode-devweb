@@ -1,12 +1,12 @@
-<?php include_once("header.php");?>
+<?php include_once "header.php";?>
 
 <section  ng-controller="cart-controller">
-	
+
 	<div class="container">
 
 		<div class="row text-center title-default-roxo" style="margin:40px auto;">
 			<h2>carrinho de compras</h2>
-			<hr>	
+			<hr>
 		</div>
 
 		<table id="cart-products" class="table table-bordered">
@@ -84,7 +84,7 @@
 
 </section>
 
-<?php include_once("footer.php");?>
+<?php include_once "footer.php";?>
 
 <script>
 angular.module("shop", []).controller("cart-controller", function($scope, $http){
@@ -102,7 +102,7 @@ angular.module("shop", []).controller("cart-controller", function($scope, $http)
 				frete:response.data.frete_car,
 				total:response.data.total_car
 			}
-			
+
 			$scope.produtos = response.data.produtos;
 
 			console.log(response.data)
@@ -111,33 +111,7 @@ angular.module("shop", []).controller("cart-controller", function($scope, $http)
 			console.error(response);
 
 		});
-
 	};
-
-	/* $scope.carrinho = {
-		cep:'01310-100',
-		subtotal:'1.110,00',
-		frete:'0,00',
-		total:'1.110,00'
-	};
-
-	$scope.produtos = [{
-		nome_prod_long:'Smartphone Motorola Moto X Play Dual',
-		preco:'1.500,99',
-		total:'1.500,99',
-		qtd:1,
-		foto_principal:'iphone.jpg',
-		prazo:'11 dias úteis',
-		id_prod:1
-	},{
-		nome_prod_long:'Smartphone Motorola Moto X Play Dual',
-		preco:'1.500,99',
-		total:'1.500,99',
-		qtd:1,
-		foto_principal:'iphone.jpg',
-		prazo:'10 dias úteis',
-		id_prod:2
-	}]; */
 
 	$scope.addQtd = function(_produto){
 
@@ -152,20 +126,13 @@ angular.module("shop", []).controller("cart-controller", function($scope, $http)
 			console.log(response);
 
 		}, function(){
-
-
-
 		});
 
 	};
 
 	$scope.removeQtd = function(_produto){
-
-
-
 	};
 
 	carregarCarrinho();
-
 });
 </script>

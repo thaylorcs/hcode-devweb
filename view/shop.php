@@ -1,14 +1,14 @@
-<?php 
-	require_once("header.php");
+<?php
+require_once "header.php";
 ?>
 
 	<section ng-controller="destaque-controller" >
-		
+
 		<div class="container " id="destaque-produtos-container" >
 			<div id="destaque-produtos">
 
 				<div class="item" ng-repeat="produto in produtos">
-					
+
 					<div class="col-md-6 col-imagem">
 						<a href="produto-{{produto.id_prod}}">
 							<img src="img/produtos/{{produto.foto_principal}}" alt="{{produto.nome_prod_longo}}">
@@ -25,14 +25,14 @@
 							<div class="text-valor-centavos shop-roxo">,{{produto.centavos}}</div>
 							<div class="text-parcelas text-arial-cinza">ou em até {{produto.parcelas}}x de R$ {{produto.parcela}}</div>
 							<div class="text-total text-arial-cinza">total a prazo R$ {{produto.total}}</div>
-					
+
 						</div>
 
 						<a href="#" class="btn btn-comprar shop-roxo"><i class="fa fa-shopping-cart shop-roxo"></i> Compre agora</a>
 					</div>
 
 				</div>
-			
+
 			</div>
 
 			<button type="button" id="btn-destaque-prev"><i class="fa fa-angle-left"></i></button>
@@ -105,27 +105,13 @@
 						</a>
 					</div>
 				</div>
-				
-				
-				<!-- <div class="col-md-3">
-					<div class="box-produto-info">
-						<a href="#">
-							<img src="img/produtos/panelas.png" alt="Panelas" class="produto-img">
-							<h3>Conjunto de Panelas Tramontina Versalhes Alumínio Antiaderente 5</h3>
-							<div class="estrelas" data-score="4"></div>
-							<div class="text-qtd-reviews text-arial-cinza">(300)</div>
-							<div class="text-valor shop-roxo">109,90</div>
-							<div class="text-parcelado text-arial-cinza">10x de R$ 10,99 sem juros</div>
-						</a>
-					</div>
-				</div> -->
 			</div>
 		</div> <!-- mais buscados -->
 
 	</section>
 
-	<?php 
-		require_once("footer.php") 
+	<?php
+		require_once "footer.php"
 	?>
 
 	<script>
@@ -188,7 +174,4 @@
 
 			});
 		});
-
-		
-	
 	</script>

@@ -78,14 +78,7 @@
 						<time>December 21, 2015</time>
 					</div>
 				</div>
-				
-				
 			</div>
-
-
-			
-			
-
 		</div>
 
 		<div id="estatisticas">
