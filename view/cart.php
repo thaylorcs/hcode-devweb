@@ -101,7 +101,7 @@ angular.module("shop", []).controller("cart-controller", function($scope, $http)
 				subtotal:response.data.subtotal_car,
 				frete:response.data.frete_car,
 				total:response.data.total_car
-			}
+			};
 
 			$scope.produtos = response.data.produtos;
 
